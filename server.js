@@ -12,6 +12,10 @@ app.use(cors({
   credentials: true              
 }));
 
+app.get("/", (req, res) => {
+  res.send("Auth Backend API is running ✅");
+});
+
 
 app.use(express.json());
 
